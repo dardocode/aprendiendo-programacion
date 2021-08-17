@@ -1,4 +1,7 @@
 <?php
+echo '<p>variables se escriben con el simbolo de moneda o $</p>';
+print '<p>las variables se pueden colocar dentro de cadenas de texto sin necesidad de concatenarlas</p>';
+echo '<p>Comentarios se pueden hacer con el numeral o #</p>';
 
 #Variable Numérica
 $numero = 5;
@@ -27,6 +30,7 @@ echo "<br><br>";
 #Variable Arreglo con Propiedades
 $verduras = array("verdura1"=>"lechuga", "verdura2"=>"cebolla");
 echo "Esto es una variable arreglo con propiedades: $verduras[verdura1]<br>";
+echo('<p>'.$verduras['verdura2'].'</p>');
 var_dump($verduras);
 echo "<br><br>";
 
