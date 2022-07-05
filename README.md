@@ -4,4 +4,6 @@
 Some notes, code examples are from courses
 
 
-Intro folder: master en php juan fernando Urrego at Udemy
+Courses: 
+PHP 8 y MYSQL: El Curso Completo, Práctico y Desde Cero ! - Carlos Arturo Esparza - Udemy 
+Master en PHP - Juan Fernando Urrego at Udemy
