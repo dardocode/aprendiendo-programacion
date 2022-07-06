@@ -1,0 +1,4 @@
+name: my-lando-php-server
+recipe: lemp
+config:
+  webroot: .
