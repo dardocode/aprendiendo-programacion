@@ -6,7 +6,7 @@ more info at https://www.drupal.org/docs/develop/standards/api-documentation-and
 
 /**
  * @file
- * Hook implementations for the score_webform module.
+ * Hook implementations for the webform module.
  */
 
 /**
