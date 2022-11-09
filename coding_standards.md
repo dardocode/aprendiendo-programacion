@@ -1,4 +1,6 @@
 When creating .module.yml file in Drupal, the begging of the file should follow the coding standards: for example:
+more info at https://www.drupal.org/docs/develop/standards/api-documentation-and-comment-standards#file
+
 ```
 <?php
 
