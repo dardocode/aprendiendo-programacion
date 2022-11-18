@@ -1,4 +1,4 @@
-##In the next lesson, you’ll start creating your own PHP code. Take a second and review what you already know about PHP:
+### In the next lesson, you’ll start creating your own PHP code. Take a second and review what you already know about PHP:
 
 -- Despite its age, PHP is still a commonly used technology in web development.
 -- PHP is designed to interact with HTML to generate dynamic websites.
