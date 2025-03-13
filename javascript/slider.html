@@ -1,0 +1,77 @@
+ <div class="slider-container" id="slider1">
+                        <div class="slider-arrow left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                              </svg>
+                        </div>
+                        <div class="slider-arrow right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100                                                                              " fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                              </svg>
+                        </div>
+                        <div class="slider-card active">
+                            <p class="postType">PUBLICATION</p>
+                            <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.649343/full" target="_blank">
+                                <h4 class="slider-card-header">Clinical outcomes following immune checkpoint inhibitor treatment</h4>
+                          <img src="https://irepertoire.flywheelstaging.com/wp-content/uploads/2023/06/img-01-clinical-outcomes.jpg" alt="Clinical outcomes image" />
+                          </a>
+                        </div>
+                        <div class="slider-card">
+                            <p class="postType">PUBLICATION</p>
+                            <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.649343/full" target="_blank">
+                                <h4 class="slider-card-header">Risk factors that contribute to inhibitor
+therapy response</h4>
+                          <img src="https://irepertoire.flywheelstaging.com/wp-content/uploads/2023/06/img-01-risk-factors.jpg" alt="risk factor image" />
+                          </a>
+                        </div>
+                        <div class="slider-card">
+                            <p class="postType">POSTER</p>
+                            <a href="https://share.hsforms.com/14ngrdvX3RTCrXOxWaXNQuA42qoc" target="_blank">
+                                <h4 class="slider-card-header">Evaluating renal cancer treatment</h4>
+                          <img src="https://irepertoire.flywheelstaging.com/wp-content/uploads/2023/06/img-01-renal-cancer.jpg" alt="Evaluating renal cancer image" />
+                          </a>
+                        </div>
+                        <div class="slider-card">
+                            <p class="postType">WEBINAR</p>
+                            <a href="https://irepertoire.com/webinars-videos/translational-dx-virtual-summit/" target="_blank">
+                                <h4 class="slider-card-header">Predicting treatment response in renal cancer</h4>
+                          <img src="https://irepertoire.flywheelstaging.com/wp-content/uploads/2023/06/img-01-predicting-treatment.jpg" alt="Evaluating renal cancer image" />
+                          </a>
+                        </div>
+                        <div class="slider-card">
+                            <p class="postType">CASE STUDY</p>
+                            <a href="https://irepertoire.com/sitc-case-study-oncology/" target="_blank">
+                                <h4 class="slider-card-header">Pre- and post-treatment monitoring in cancer</h4>
+                          <img src="https://irepertoire.flywheelstaging.com/wp-content/uploads/2023/06/img-01-pre-post-treatment.jpg" alt="pre and post treatment image" />
+                          </a>
+                        </div>
+                      </div>
+</div>
+
+function initializeSlider(sliderId) {
+    const sliderContainer = document.querySelector(`#${sliderId}`);
+    const sliderCards = sliderContainer.querySelectorAll('.slider-card');
+    const sliderArrows = sliderContainer.querySelectorAll('.slider-arrow');
+  
+    let currentCardIndex = 0;
+  
+    function showCard(index) {
+      sliderCards.forEach(card => card.classList.remove('active'));
+      sliderCards[index].classList.add('active');
+    }
+  
+    function navigateSlider(event) {
+      const arrowClicked = event.target.closest('.slider-arrow');
+      const arrowDirection = arrowClicked.classList.contains('left') ? -1 : 1;
+      currentCardIndex = (currentCardIndex + arrowDirection + sliderCards.length) % sliderCards.length;
+      showCard(currentCardIndex);
+    }
+  
+    sliderArrows.forEach(arrow => {
+      arrow.addEventListener('click', navigateSlider);
+    });
+  
+    showCard(currentCardIndex);
+  }
+  
+  initializeSlider('slider1');
