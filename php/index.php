@@ -63,6 +63,18 @@
         <li><a href="git_github.html">Control de versiones con Git y GitHub</a></li>
         <li><a href="docker_php.html">Introducción a DevOps: Docker con PHP y despliegues</a></li>
     </ul>
+
+
+    <h3>Fase 5: Proyectos Prácticos</h3>
+    <ul>
+        <li><a href="./ejercicios/ejercicio2.php">Form post nombre</a></li>
+        <li><a href="./ejercicios/ejercicio3.html">Form GET nombre</a></li>
+        <li><a href="proyecto_blog_php.html">Desarrollo de un blog con PHP y MySQL</a></li>
+        <li><a href="proyecto_ecommerce_php.html">Creación de una tienda online con PHP y Stripe</a></li>
+        <li><a href="proyecto_api_rest_php.html">Desarrollo de una API REST con PHP y Laravel</a></li>
+        <li><a href="proyecto_websockets_php.html">Implementación de un chat con WebSockets en PHP</a></li>
+        <li><a href="proyecto_graphql_php.html">Creación de un servidor GraphQL con PHP y Symfony</a></li>
+        <li><a href="proyecto_mensajeria_php.html">Sistema de mensajería en tiempo real con PHP y Apache Kafka</a></li>
 </body>
 </html>
 
